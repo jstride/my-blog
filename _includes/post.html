@@ -1,0 +1,70 @@
+						<div id="blog" class="single-post">
+                            <!-- Post single item-->
+                            <div class="post-item">
+                                <div class="post-item-wrap">
+								{% if page.image %}
+                                    <div class="post-image">
+                                        <a href="#">
+                                            <img alt="" src="{{ page.image }}">
+                                        </a>
+										<span class="post-meta-attribution">
+									{% if page.image_attribution_unsplash %}
+										Photo by <a href="https://unsplash.com/@{{ page.image_attribution_unsplash }}?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge">{{ page.image_attribution_name }}</a>
+									{% else if page.image_attribution %}
+										{{ page.image_attribution }}
+									{% endif %}
+										</span>
+                                    </div>
+								{% endif %}
+                                    <div class="post-item-description">
+                                        <h2>{{ page.title }}</h2>
+                                        <div class="post-meta">
+                                            <span class="post-meta-date"><i class="fa fa-calendar-o"></i>{{ page.date | date: "%-d %B %Y" }}</span>
+                                            <!--<span class="post-meta-comments"><a href=""><i class="fa fa-comments-o"></i>33 Comments</a></span>-->
+                                            <span class="post-meta-category"><i class="fa fa-tag"></i>{% for tag in page.tags %}<a href="">{{ tag }}</a>{% endfor %}</span>
+                                            <!--<div class="post-meta-share">
+                                                <a class="btn btn-xs btn-slide btn-facebook" href="#">
+                                                    <i class="fab fa-facebook-f"></i>
+                                                    <span>Facebook</span>
+                                                </a>
+                                                <a class="btn btn-xs btn-slide btn-twitter" href="#" data-width="100">
+                                                    <i class="fab fa-twitter"></i>
+                                                    <span>Twitter</span>
+                                                </a>
+                                                <a class="btn btn-xs btn-slide btn-instagram" href="#" data-width="118">
+                                                    <i class="fab fa-instagram"></i>
+                                                    <span>Instagram</span>
+                                                </a>
+                                                <a class="btn btn-xs btn-slide btn-googleplus" href="mailto:#" data-width="80">
+                                                    <i class="icon-mail"></i>
+                                                    <span>Mail</span>
+                                                </a>
+                                            </div>-->
+                                        </div>
+                                        {{ page.content }}
+                                    </div>
+                                    <div class="post-tags">
+									{% for category in page.categories %}
+										<a href="/{{ category | downcase }}">{{ category }}</a>
+									{% endfor %}
+                                    </div>
+                                    <div class="post-navigation">
+									{% if page.previous.url %}
+                                        <a href="{{ page.previous.url }}" class="post-prev" title="{{ page.previous.title }}">
+                                            <div class="post-prev-title"><span>Previous Post</span>{{ page.previous.title | truncate: 30 }}</div>
+                                        </a>
+									{% endif %}
+                                        <a href="/posts/" class="post-all">
+                                            <i class="icon-grid"> </i>
+                                        </a>
+									{% if page.next.url %}
+                                        <a href="{{page.next.url}}" class="post-next" title="{{ page.next.title }}">
+                                            <div class="post-next-title"><span>Next Post</span>{{ page.next.title | truncate: 30 }}</div>
+                                        </a>
+									{% endif %}
+                                    </div>
+									<!-- INCLUDE COMMENTS -->
+                                </div>
+                            </div>
+                            <!-- end: Post single item-->
+                        </div>

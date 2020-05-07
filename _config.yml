@@ -1,0 +1,21 @@
+url: https://jake.stride.me.uk
+permalink: /posts/:year/:month/:day/:title:output_ext
+excerpt_separator: <!-- readmore -->
+collections:
+  - links
+sass:
+    sass_dir: _sass
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      is_post: true
+      layout: "posts"
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      is_page: "agaga"
