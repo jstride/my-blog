@@ -1,9 +1,8 @@
 title: Jake's Blog
 email: jake@stride.me.uk
 twitter_username: jake
-baseurl: "/posts"
 url: https://jake.stride.me.uk
-permalink: /:year/:month/:day/:title:output_ext
+permalink: /posts/:year/:month/:day/:title:output_ext
 excerpt_separator: <!-- readmore -->
 collections:
   - links
