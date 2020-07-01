@@ -4,6 +4,7 @@ twitter_username: jake
 url: https://jake.stride.me.uk
 permalink: /posts/:year/:month/:day/:title:output_ext
 excerpt_separator: <!-- readmore -->
+host: 0.0.0.0
 collections:
   - links
 sass:
@@ -35,3 +36,4 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+  - vendor/gems/
