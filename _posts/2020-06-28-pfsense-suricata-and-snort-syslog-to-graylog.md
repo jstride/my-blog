@@ -43,13 +43,15 @@ First of all from your pfSense firewall visit `Status > System Logs > Settings`.
 ![Screenshot of pfSense Syslog settings](/assets/images/posts/pfsense-syslog.png)
 
 #### 3b. Suricata/Snort Logs
-Next, we'll send Suricata or Snort logs. These instuctions you already have Suricata or Snort set up, check out the [pfSense IDS / IDP insturctions](https://docs.netgate.com/pfsense/en/latest/ids-ips/index.html) if you haven't. I'm using Suricata but the following should be similar for Snort. Visit `Services > Suricata` and click the edit icon next to the interface you wish to send.
+Next, we'll send Suricata or Snort logs. These instuctions assume you already have Suricata or Snort set up, check out the [pfSense IDS / IDP insturctions](https://docs.netgate.com/pfsense/en/latest/ids-ips/index.html) if you haven't. I'm using Suricata but the following should be similar for Snort. Visit `Services > Suricata` and click the edit icon next to the interface you wish to send logs for.
 
 ![Screenshot of pfSense Suricata interfaces](/assets/images/posts/pfsense-suricata.png)
 
-We'll then use Barnyard2 to send the logs - these are sent straight to the graylog server input detail above. Using Barnyard2 has the added benefit that the start of the log includes the Suricata/Snort tag, rather than a random number stream if you just use local logging without Barnyard2.
+We'll then use Barnyard2 to send the logs - these are sent straight to the graylog server input detail above. Using Barnyard2 has the added benefit that the start of the log includes the Suricata/Snort tag, rather than a random number stream if you just use local logging without Barnyard2. First of all  make sure that Barnyard 2 is enabled at the top and then complete the following details:
 
 ![Screenshot of pfSense Barnyard2 settings](/assets/images/posts/pfsense-barnyard.png)
+
+Click `Save` and then follow the instructions that tell you [re]start Barnyard 2
 
 ### 4. Testing
 **At this point you should now start to see logs from pfSense and Suricata/Snort in your Graylog server**. Click on the 'Search' tab in Graylog to check - it'll probably have a lot of filterlog entries if you're logging firewall events.
