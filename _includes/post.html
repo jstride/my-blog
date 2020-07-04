@@ -21,7 +21,7 @@
                                         <div class="post-meta">
                                             <span class="post-meta-date"><i class="fa fa-calendar-o"></i>{{ page.date | date: "%-d %B %Y" }}</span>
                                             <!--<span class="post-meta-comments"><a href=""><i class="fa fa-comments-o"></i>33 Comments</a></span>-->
-                                            <span class="post-meta-category"><i class="fa fa-tag"></i>{% for tag in page.tags %}<a href="">{{ tag }}</a>{% endfor %}</span>
+                                            <span class="post-meta-category"><i class="fa fa-tag"></i>{% for tag in page.tags %}<a href="">{{ tag }}</a>{% if forloop.last != true %}, {% endif %}{% endfor %}</span>
                                             <!--<div class="post-meta-share">
                                                 <a class="btn btn-xs btn-slide btn-facebook" href="#">
                                                     <i class="fab fa-facebook-f"></i>
