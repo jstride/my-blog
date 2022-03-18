@@ -4,7 +4,8 @@ tags: [Management]
 category: [Featured]
 medium_link: https://medium.com/management-matters/to-be-a-tech-leader-kill-the-tech-talk-bd85b6723d52
 image: /assets/images/posts/dan-schiumarini-dcL8ESbsGis-unsplash.jpg
-image_attribution: Photo by <a href="https://unsplash.com/@dan_schiumarini?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Dan Schiumarini</a> on <a href="/@dan_schiumarini?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a>
+image_attribution_name: Dan Schiumarini
+image_attribution_unsplash: dan_schiumarini
 ---
 I remember they day it happened. At first all I felt was shame and disappointment; it was the day my software developers said to me, “We’re not letting you write code anymore.”
 <!-- readmore -->
