@@ -1,5 +1,5 @@
 ---
-title: Don’t be an idiot — encapsulate unique business knowledge in your digital twinss
+title: Don’t be an idiot — encapsulate unique business knowledge in your digital twins
 tags: [Digital Twin]
 category: [Featured]
 tumblr_url: https://jake.stride.me.uk/post/175845608355/dont-be-an-idiot-encapsulate-unique-business
