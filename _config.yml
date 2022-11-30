@@ -7,7 +7,8 @@ permalink: /posts/:year/:month/:day/:title:output_ext
 excerpt_separator: <!-- readmore -->
 host: 0.0.0.0
 collections:
-  - links
+  links:
+    output: false
 sass:
     sass_dir: _sass
 plugins:

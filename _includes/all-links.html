@@ -1,0 +1,35 @@
+				<div id="blog" class="grid-layout post-3-columns m-b-30" data-item="post-item">
+                {% assign sorted = site.links | sort: 'date' | reverse %}
+				{% for link in sorted %}
+					<!-- Post item-->
+					<div class="post-item border">
+                        <div class="post-item-wrap">
+                            <div class="post-image">
+                                <a href="#">
+                                    <img class="rounded" alt="" src="{{ link.image }}">
+                                </a>
+                                <span class="post-meta-attribution">
+								{% if link.image_attribution_unsplash %}
+									Photo by <a href="https://unsplash.com/@{{ link.image_attribution_unsplash }}?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge">{{ link.image_attribution_name }}</a>
+								{% else if link.image_attribution %}
+									{{ link.image_attribution }}
+								{% endif %}
+								</span>
+                            </div>
+                            <div class="post-item-description">
+                                <span class="post-meta-date"><i class="fa fa-calendar-o"></i>{{ link.date | date: "%-d %B %Y" }}</span>
+                                <!--<span class="post-meta-comments"><a href=""><i class="fa fa-comments-o"></i>33 Comments</a></span>-->
+                                <h2><a href="{{ link.external_link }}">{{ link.title }}</a></h2>
+                                {{ link.excerpt }}
+                                <span class="post-meta-category"><i class="fa fa-tag"></i>{% for tag in link.tags %}<a href="">{{ tag }}</a>{% if forloop.last != true %}, {% endif %}{% endfor %}</span>
+
+                            </div>
+                        </div>
+                    </div>
+					<!-- end: Post item-->
+				{% endfor %}
+
+                    
+
+
+                </div>

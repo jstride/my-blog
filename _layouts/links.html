@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+<body>
+    <!-- Body Inner -->
+    <div class="body-inner">
+
+        <!-- Header -->
+        {% include header.html %}
+        <!-- end: Header -->
+        <!-- AUTHOR NAME -->
+        <section>
+            <div class="blog-author-title"> Links </div>
+        </section>
+        <!-- end: AUTHOR NAME -->
+
+        <!-- Content -->
+        <section id="page-content">
+            <div class="container">
+                <!-- link content -->
+
+                <!-- Links -->
+				{% include all-links.html %}
+                <!-- end: Links -->
+
+            </div>
+            <!-- end: link content -->
+
+        </section> <!-- end: Content -->
+        <!-- Footer -->
+        {% include footer.html %}
+        <!-- end: Footer -->
+
+    </div>
+    <!-- end: Body Inner -->
+
+    {% include foot.html %}
+
+</body>
+
+</html>
