@@ -21,8 +21,8 @@
                                 <!--<span class="post-meta-comments"><a href=""><i class="fa fa-comments-o"></i>33 Comments</a></span>-->
                                 <h2><a href="{{ link.external_link }}">{{ link.title }}</a></h2>
                                 {{ link.excerpt }}
-                                <span class="post-meta-category"><i class="fa fa-tag"></i>{% for tag in link.tags %}<a href="">{{ tag }}</a>{% if forloop.last != true %}, {% endif %}{% endfor %}</span>
-
+                                {% assign tags_size = link.tags | size %}
+                                {% if tags_size > 0 %}<span class="post-meta-category"><i class="fa fa-tag"></i>{% for tag in link.tags %}{{ tag }}{% if forloop.last != true %}, {% endif %}{% endfor %}</span>{% endif %}
                             </div>
                         </div>
                     </div>
