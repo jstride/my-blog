@@ -2,7 +2,7 @@
 					<div class="post-item border">
                         <div class="post-item-wrap">
                             <div class="post-image">
-                                <a href="#">
+                                <a href="{% if post.categories contains "links" %}{{ post.external_link }}{% else %}{{ post.url }}{% endif %}">
                                     <img class="rounded" alt="" src="{{ post.image }}">
                                 </a>
                                 <span class="post-meta-attribution">
