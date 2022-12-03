@@ -30,7 +30,7 @@
 											<div class="post-thumbnail-entry">
 												<img alt="" src="{{ post.image }}">
 												<div class="post-thumbnail-content">
-													<a href="{{ post.url }}" title="{{ post.title }}">{{ post.title | truncate: 50 }}</a>
+													<a href="{% if post.categories contains "links" %}{{ post.external_link }}{% else %}{{ post.title}}{% endif %}" title="{{ post.title }}">{{ post.title | truncate: 50 }}</a>
 													<span class="post-date"><i class="far fa-clock"></i> {{ post.date | date: "%-d %B %Y" }}</span>
 												</div>
 											</div>

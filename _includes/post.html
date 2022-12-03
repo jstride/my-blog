@@ -4,9 +4,13 @@
                                 <div class="post-item-wrap">
 								{% if page.image %}
                                     <div class="post-image">
-                                        <a href="#">
-                                            <img alt="" src="{{ page.image }}">
+                                        {% if page.categories contains "links" %}
+                                        <a href="{{ page.external_link }}">
+                                            <img alt="{{ page.title }}" src="{{ page.image }}">
                                         </a>
+                                        {% else %}
+                                        <img alt="{{ page.title }}" src="{{ page.image }}">
+                                        {% endif %}
 										<span class="post-meta-attribution">
 									{% if page.image_attribution_unsplash %}
 										Photo by <a href="https://unsplash.com/@{{ page.image_attribution_unsplash }}?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge">{{ page.image_attribution_name }}</a>
