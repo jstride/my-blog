@@ -18,7 +18,7 @@
                             <div class="post-item-description">
                                 <span class="post-meta-date"><i class="fa fa-calendar-o"></i>{{ post.date | date: "%-d %B %Y" }}</span>
                                 <!--<span class="post-meta-comments"><a href=""><i class="fa fa-comments-o"></i>33 Comments</a></span>-->
-                                <h2><a href="{% if post.categories contains "Links" %}{{ post.external_link }}{% else %}{{ post.url}}{% endif %}">{{ post.title }}</a></h2>
+                                <h2><a href="{% if post.categories contains "links" %}{{ post.external_link }}{% else %}{{ post.url}}{% endif %}">{{ post.title }}</a></h2>
                                 {{ post.excerpt }}
                                 {% assign tags_size = post.tags | size %}
                                 {% if tags_size > 0 %}<span class="post-meta-category"><i class="fa fa-tag"></i>{% for tag in post.tags %}{{ tag }}{% if forloop.last != true %}, {% endif %}{% endfor %}</span>{% endif %}

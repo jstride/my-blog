@@ -17,7 +17,7 @@
                                     </div>
 								{% endif %}
                                     <div class="post-item-description">
-                                        <h2>{{ page.title }}</h2>
+                                        <h2>{% if page.categories contains "links" %}<a href="{{ page.external_link }}">{{ page.title }}</a>{% else %}{{ page.title}}{% endif %}</h2>
                                         <div class="post-meta">
                                             <span class="post-meta-date"><i class="fa fa-calendar-o"></i>{{ page.date | date: "%-d %B %Y" }}</span>
                                             <!--<span class="post-meta-comments"><a href=""><i class="fa fa-comments-o"></i>33 Comments</a></span>-->
@@ -43,11 +43,13 @@
                                         </div>
                                         {{ page.content }}
                                     </div>
-                                    <div class="post-tags">
-									{% for category in page.categories %}
-										<a href="/{{ category | downcase }}">{{ category }}</a>
-									{% endfor %}
-                                    </div>
+                                    {% unless page.categories contains "links" %}
+                                        <div class="post-tags">
+                                        {% for category in page.categories %}
+                                            <a href="/{{ category | downcase }}">{{ category }}</a>
+                                        {% endfor %}
+                                        </div>
+                                    {% endunless %}
                                     <div class="post-navigation">
 									{% if page.previous.url %}
                                         <a href="{{ page.previous.url }}" class="post-prev" title="{{ page.previous.title }}">
