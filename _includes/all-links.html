@@ -11,6 +11,8 @@
                                 <span class="post-meta-attribution">
 								{% if link.image_attribution_unsplash %}
 									Photo by <a href="https://unsplash.com/@{{ link.image_attribution_unsplash }}?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge">{{ link.image_attribution_name }}</a>
+                                {% else if link.image_attribution_url %}
+									Photo by <a href="{{ link.image_attribution_url }}">{{ link.image_attribution }}</a>
 								{% else if link.image_attribution %}
 									{{ link.image_attribution }}
 								{% endif %}
