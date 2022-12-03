@@ -8,6 +8,8 @@ image_attribution_unsplash: squareddesign
 ---
 This guide is an overview of how to push logs from [pfSense](https://www.pfsense.org/) (an Open Source firewall) into [Graylog](https://www.graylog.org/) (an Open Source log aggregated and parser). 
 
+<!-- readmore -->
+
 It's one of the foundational building blocks to building a Threat Intellegence toolset using Open Source software. 
 
 These instructions are one way of getting data from pfSense and Suricata (tested on pfSense 2.4.5) into Graylog (tested 3.2). They should also work for Snort given the same log formats.

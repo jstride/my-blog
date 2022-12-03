@@ -8,6 +8,8 @@ image_attribution_unsplash: markusspiske
 ---
 This guide is the second part in a series which looks at setting up a grafana dashboard for your pfSense network, [the first part](/posts/2020/06/28/pfsense-suricata-and-snort-syslog-to-graylog.html) should be completed before following these steps.
 
+<!-- readmore -->
+
 ### 1. Setting up indices
 
 Graylog stores log in a series of indices and we'll be splitting out our logs into 3 main areas. The reason for this is twofold. First, Suricata/Snort and filterlog have different attributes from the rest of the logs when parsed. Second, Suricata/Snort and filterlog can generate a lot of data and you may wish to choose different retention strategies (beyond the scope of this guide).
