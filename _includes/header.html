@@ -19,10 +19,9 @@
                                 <ul>
                                     <li><a href="/">Home</a></li>
 									<li><a href="/posts/">Archive</a></li>
-                                    <li><a href="/links/">Links</a></li>
 							{% for category in site.categories %}
 								{% if category[0] != "Featured" and category[1].size > 4 %}
-									<li><a href="#">{{ category[0] }}</a></li>
+									<li><a href="/{{ category[0] | slugize }}/">{{ category[0] }}</a></li>
 								{% endif %}
 							{% endfor %}
                                     
