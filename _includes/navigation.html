@@ -3,11 +3,11 @@
                             <nav>
                                 <ul>
 								{% for item in site.data.navigation.main %}
-									<li {% if item.subfolderitems %}class="dropdown"{% endif %}><a href="{{ item.url }}" {% if page.url == item.url %}style="active"{% endif %}>{{ item.title }}</a>
+									<li {% if item.subfolderitems %}class="dropdown"{% endif %}><a href="{{ item.url | absolute_url }}" {% if page.url == item.url %}style="active"{% endif %}>{{ item.title }}</a>
 										{% if item.subfolderitems %}
 										<ul class="dropdown-menu">
 											{% for entry in item.subfolderitems %}
-											<li><a href="{{ entry.url }}">{{ entry.title }}</a></li>
+											<li><a href="{{ entry.url | absolute_url }}">{{ entry.title }}</a></li>
 											{% endfor %}
 										</ul>
 										{% endif %}
