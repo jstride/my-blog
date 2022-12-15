@@ -56,7 +56,7 @@
                                     {% endunless %}
                                     <div class="post-navigation">
 									{% if page.previous.url %}
-                                        <a href="{{ page.previous.url }}" class="post-prev" title="{{ page.previous.title }}">
+                                        <a href="{{ page.previous.url | absolute_url }}" class="post-prev" title="{{ page.previous.title }}">
                                             <div class="post-prev-title"><span>Previous Post</span>{{ page.previous.title | truncate: 30 }}</div>
                                         </a>
 									{% endif %}
@@ -64,7 +64,7 @@
                                             <i class="icon-grid"> </i>
                                         </a>
 									{% if page.next.url %}
-                                        <a href="{{page.next.url}}" class="post-next" title="{{ page.next.title }}">
+                                        <a href="{{page.next.url | absolute_url }}" class="post-next" title="{{ page.next.title }}">
                                             <div class="post-next-title"><span>Next Post</span>{{ page.next.title | truncate: 30 }}</div>
                                         </a>
 									{% endif %}
