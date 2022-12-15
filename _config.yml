@@ -2,7 +2,7 @@ title: Jake's Blog
 description: The home of Jake's musings
 email: jake@stride.me.uk
 twitter_username: jake
-url: https://jake.stride.me.uk
+url: https://jakestride.com
 permalink: /posts/:year/:month/:day/:title:output_ext
 excerpt_separator: <!-- readmore -->
 host: 0.0.0.0
