@@ -45,7 +45,7 @@ jobs:
       - name: Commit changes
         uses: EndBug/add-and-commit@v4
         with:
-          add: 'public/'
+          add: 'assets/'
           author_name: "github-actions[bot]"
           author_email: "github-actions@users.noreply.github.com"
           message: |
