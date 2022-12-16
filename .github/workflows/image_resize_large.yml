@@ -1,6 +1,6 @@
 name: Resize images
 
-on: [pull_request,page_build]
+on: [push]
 
 jobs:
   build:
