@@ -21,6 +21,7 @@ jobs:
           IMAGES_FORMATS: "jpg, jpge, png" 
           IMAGES_DIRECTORIES: "my-blog/assets/images/posts"
           IMAGES_PREFIX: "large"
+          DEBUG: True
 
       - name: Commit changes
         uses: EndBug/add-and-commit@v4
