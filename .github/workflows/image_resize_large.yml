@@ -19,13 +19,13 @@ jobs:
           IMAGES_MAX_WIDTH: "1500"
           IMAGES_QUALITY: "90"
           IMAGES_FORMATS: "jpg, jpge, png" 
-          IMAGES_DIRECTORIES: "assets/images/posts"
+          IMAGES_DIRECTORIES: "my-blog/assets/images/posts"
           IMAGES_PREFIX: "large"
 
       - name: Commit changes
         uses: EndBug/add-and-commit@v4
         with:
-          add: 'public/'
+          add: 'my-blog/'
           author_name: "github-actions[bot]"
           author_email: "github-actions@users.noreply.github.com"
           message: |
