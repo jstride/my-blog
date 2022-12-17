@@ -66,7 +66,7 @@ jobs:
           IMAGES_DIRECTORIES: "assets/images/posts/medium"
           IMAGES_PREFIX: "../small/"
       - name: Commit changes
-        uses: EndBug/add-and-commit@master
+        uses: EndBug/add-and-commit@v9
         with:
           add: 'assets/'
           author_name: "github-actions[bot]"
