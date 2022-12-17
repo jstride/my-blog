@@ -20,7 +20,7 @@ jobs:
           IMAGES_QUALITY: "90"
           IMAGES_FORMATS: "jpg, jpge, png" 
           IMAGES_DIRECTORIES: "assets/images/posts"
-          IMAGES_PREFIX: "large_"
+          IMAGES_PREFIX: "large/"
           DEBUG: True
 
       - name: Commit changes
