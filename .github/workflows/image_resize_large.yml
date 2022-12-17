@@ -16,11 +16,11 @@ jobs:
         # You can change the version as well
         uses: gonzalonaveira/gh-image-resizing@master
         with:
-          IMAGES_MAX_WIDTH: "1500"
+          IMAGES_MAX_WIDTH: "800"
           IMAGES_QUALITY: "90"
           IMAGES_FORMATS: "jpg, jpge, png" 
           IMAGES_DIRECTORIES: "assets/images/posts"
-          IMAGES_PREFIX: "large"
+          IMAGES_PREFIX: "large_"
           DEBUG: True
 
       - name: Commit changes
