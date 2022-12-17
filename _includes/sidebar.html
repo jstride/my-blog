@@ -17,7 +17,7 @@
                                             <div class="post-thumbnail-entry">
 												<img alt="" src="{% if jekyll.environment == "production" %}{{ post.image | replace: "/posts/", "/posts/thumb/" }}{% else %}{{ post.image }}{% endif %}">
 												<div class="post-thumbnail-content">
-													<a href="{{ post.url | absolute_url }}" title="{{ post.title }}">{{ post.title | truncate: 50 }}</a>
+													<a href="{{ post.url }}" title="{{ post.title }}">{{ post.title | truncate: 50 }}</a>
 													<span class="post-date"><i class="far fa-clock"></i> {{ post.date | date: "%-d %B %Y" }}</span>
 												</div>
 											</div>

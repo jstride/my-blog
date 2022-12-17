@@ -4,7 +4,7 @@
 					<div class="post-item border">
                         <div class="post-item-wrap">
                             <div class="post-image">
-                                <a href="{{ post.url | absolute_url }}">
+                                <a href="{{ post.url }}">
                                     <img class="rounded" alt="" src="{{ post.image }}">
                                 </a>
                                 <span class="post-meta-attribution">
@@ -18,9 +18,9 @@
                             <div class="post-item-description">
                                 <span class="post-meta-date"><i class="fa fa-calendar-o"></i>{{ post.date | date: "%-d %B %Y" }}</span>
                                 <!--<span class="post-meta-comments"><a href=""><i class="fa fa-comments-o"></i>33 Comments</a></span>-->
-                                <h2><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h2>
+                                <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
                                 {{ post.excerpt }}
-                                <p><a href="{{ post.url | absolute_url }}" class="item-link">Read More <i class="fa fa-arrow-right"></i></a></p>
+                                <p><a href="{{ post.url }}" class="item-link">Read More <i class="fa fa-arrow-right"></i></a></p>
 
                             </div>
                         </div>
