@@ -31,6 +31,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
+        with:
+          github-token: ${{ secrets.IMAGE_RESIZE_PAT }}
 
       - name: Resize Images (Large)
         id: resize-images-large
@@ -68,13 +70,13 @@ jobs:
       - name: Commit changes
         uses: EndBug/add-and-commit@v4
         with:
+          github-token: ${{ secrets.IMAGE_RESIZE_PAT }}
           add: 'assets/'
           author_name: "github-actions[bot]"
           author_email: "github-actions@users.noreply.github.com"
           message: |
             Images Resized by Github action
-            ${{steps.resize-images.outputs.result}}
-            
+            ${{steps.resize-images.outputs.result}}  
         env:
           GITHUB_TOKEN: ${{ secrets.IMAGE_RESIZE_PAT }}
       - name: Checkout
