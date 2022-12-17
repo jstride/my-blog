@@ -5,7 +5,7 @@
                         <div class="post-item-wrap">
                             <div class="post-image">
                                 <a href="{{ post.url }}">
-                                    <img class="rounded" alt="" src="{{ post.image }}">
+                                    <img class="rounded" alt="" src="{% if jekyll.environment == "production" %}{{ post.image | replace: "/posts/", "/posts/tiny/" }}{% else %}{{ post.image }}{% endif %}">
                                 </a>
                                 <span class="post-meta-attribution">
 								{% if post.image_attribution_unsplash %}
