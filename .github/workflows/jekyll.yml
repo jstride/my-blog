@@ -30,10 +30,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@master
+      - uses: actions/checkout@v3
         with:
+          persist-credentials: false
           token: ${{ secrets.IMAGE_RESIZE_PAT }}
-          github_token: ${{ secrets.IMAGE_RESIZE_PAT }}
 
       - name: Resize Images (Large)
         id: resize-images-large
@@ -45,7 +45,6 @@ jobs:
           IMAGES_FORMATS: "jpg, jpge, png" 
           IMAGES_DIRECTORIES: "assets/images/posts"
           IMAGES_PREFIX: "large/"
-          DEBUG: True
       - name: Resize Images (Medium)
         id: resize-images-medium
         # You can change the version as well
@@ -56,7 +55,6 @@ jobs:
           IMAGES_FORMATS: "jpg, jpge, png" 
           IMAGES_DIRECTORIES: "assets/images/posts/large"
           IMAGES_PREFIX: "../medium/"
-          DEBUG: True
       - name: Resize Images (Small)
         id: resize-images-small
         # You can change the version as well
@@ -67,7 +65,6 @@ jobs:
           IMAGES_FORMATS: "jpg, jpge, png" 
           IMAGES_DIRECTORIES: "assets/images/posts/medium"
           IMAGES_PREFIX: "../small/"
-          DEBUG: True
       - name: Commit changes
         uses: EndBug/add-and-commit@v4
         with:
