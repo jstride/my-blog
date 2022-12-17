@@ -32,7 +32,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          persist-credentials: false
           token: ${{ secrets.IMAGE_RESIZE_PAT }}
 
       - name: Resize Images (Large)
