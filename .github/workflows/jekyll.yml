@@ -52,7 +52,7 @@ jobs:
           IMAGES_QUALITY: "100"
           IMAGES_FORMATS: "jpg, jpge, png" 
           IMAGES_DIRECTORIES: "assets/images/posts/large"
-          IMAGES_PREFIX: "medium/"
+          IMAGES_PREFIX: "../medium/"
           DEBUG: True
       - name: Resize Images (Small)
         id: resize-images-small
@@ -63,7 +63,7 @@ jobs:
           IMAGES_QUALITY: "90"
           IMAGES_FORMATS: "jpg, jpge, png" 
           IMAGES_DIRECTORIES: "assets/images/posts/medium"
-          IMAGES_PREFIX: "small/"
+          IMAGES_PREFIX: "../small/"
           DEBUG: True
       - name: Commit changes
         uses: EndBug/add-and-commit@v4
