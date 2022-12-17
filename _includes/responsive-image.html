@@ -1,1 +1,1 @@
-{% if jekyll.environment == "production" %}src="{{ post.image | replace: "/posts/", "/posts/large/" }}"{% else %}src="{{ post.image }}"{% endif %}
+{% if jekyll.environment == "production" %}src="{{ page.image | replace: "/posts/", "/posts/large/" }}"{% else %}src="{{ page.image }}"{% endif %}

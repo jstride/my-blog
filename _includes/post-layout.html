@@ -3,7 +3,7 @@
                         <div class="post-item-wrap">
                             <div class="post-image">
                                 <a href="{% if post.categories contains "links" %}{{ post.external_link }}{% else %}{{ post.url }}{% endif %}">
-                                    <img class="rounded" alt="" {% if jekyll.environment == "production" %}src="{{ post.image | replace: "/posts/", "/posts/tiny/" }}"{% else %}src="{{ post.image }}"{% endif %}>
+                                    <img class="rounded" alt="" src="{% if jekyll.environment == "production" %}{{ post.image | replace: "/posts/", "/posts/tiny/" }}{% else %}{{ post.image }}{% endif %}">
                                 </a>
                                 <span class="post-meta-attribution">
 								{% if post.image_attribution_unsplash %}
