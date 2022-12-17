@@ -30,18 +30,37 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Resize Images
-        id: resize-images
+      name: Github Action Image Resizing
+    runs-on: ubuntu-latest
+    steps:
+
+      - uses: actions/checkout@master
+
+      - name: Resize Images (Large)
+        id: resize-images-large
 
         # You can change the version as well
         uses: gonzalonaveira/gh-image-resizing@master
         with:
-          IMAGES_MAX_WIDTH: "1500"
+          IMAGES_MAX_WIDTH: "800"
           IMAGES_QUALITY: "90"
-          IMAGES_FORMATS: "jpg, png" 
+          IMAGES_FORMATS: "jpg, jpge, png" 
           IMAGES_DIRECTORIES: "assets/images/posts"
-          IMAGES_PREFIX: "large"
-          DEBUG: true
+          IMAGES_PREFIX: "large/"
+          DEBUG: True
+
+      - name: Resize Images (Medium)
+        id: resize-images-medium
+
+        # You can change the version as well
+        uses: gonzalonaveira/gh-image-resizing@master
+        with:
+          IMAGES_MAX_WIDTH: "680"
+          IMAGES_QUALITY: "90"
+          IMAGES_FORMATS: "jpg, jpge, png" 
+          IMAGES_DIRECTORIES: "assets/images/posts"
+          IMAGES_PREFIX: "medium/"
+          DEBUG: True
 
       - name: Commit changes
         uses: EndBug/add-and-commit@v4
@@ -50,13 +69,11 @@ jobs:
           author_name: "github-actions[bot]"
           author_email: "github-actions@users.noreply.github.com"
           message: |
-            Images Reszied by Github action
+            Images Resized by Github action
             ${{steps.resize-images.outputs.result}}
             
         env:
           GITHUB_TOKEN: ${{ secrets.IMAGE_RESIZE_PAT }}
-          
-      
       - name: Checkout
         uses: actions/checkout@v3
       - name: Setup Ruby
