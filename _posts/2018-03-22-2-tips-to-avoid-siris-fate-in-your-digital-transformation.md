@@ -1,7 +1,7 @@
 ---
 title: 2 tips to avoid Siri’s fate in your digital transformation
 tags: []
-category: [Featured]
+category: Featured
 medium_link: https://medium.com/digitalx/2-tips-to-avoid-siris-fate-in-your-digital-transformation-1c1d452ab99e
 image: /assets/images/posts/0_FOBj9FDbjtNmkDjR_.jpg
 image_attribution_name: Nathan Dumlao

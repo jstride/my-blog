@@ -1,7 +1,7 @@
 ---
 title: 3 Keys to Successful Digital Transformation
 tags: [Digital Transformation]
-category: [Featured]
+category: Featured
 medium_link: https://medium.com/digitalx/3-keys-to-successful-digital-transformation-fb01754c2174
 image: /assets/images/posts/danielle-macinnes-IuLgi9PWETU-unsplash.jpg
 image_attribution_name: Danielle MacInnes

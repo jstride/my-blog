@@ -1,7 +1,7 @@
 ---
 title: To Be a Tech Leader, Kill the Tech Talk
 tags: [Management]
-category: [Featured]
+category: Featured
 medium_link: https://medium.com/management-matters/to-be-a-tech-leader-kill-the-tech-talk-bd85b6723d52
 image: /assets/images/posts/christopher-robin-ebbinghaus-pgSkeh0yl8o-unsplash.jpg
 image_attribution_name: Christopher Robin Ebbinghaus

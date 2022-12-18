@@ -1,7 +1,7 @@
 ---
 title: Why you need to invest in heroes to build Digital Twins
 tags: [Digital Twin]
-category: [Featured]
+category: Featured
 medium_link: https://medium.com/digitalx/dont-be-an-idiot-encapsulate-unique-business-knowledge-in-your-digital-twins-a8c4d086f73f
 image: /assets/images/posts/0_KeUfO7A-tVJ2Uq4G.jpg
 image_attribution_name: Tony Webster

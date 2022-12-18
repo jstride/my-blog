@@ -1,7 +1,7 @@
 ---
 title: Migrating to Github Pages
 tags: [github]
-category: [TIL]
+category: TIL
 image: /assets/images/posts/patrick-tomasso-Oaqk7qqNh_c-unsplash.jpg
 image_attribution_name: Patrick Tomasso
 image_attribution_unsplash: impatrickt

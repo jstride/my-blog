@@ -1,7 +1,7 @@
 ---
 title: Why you must use Open Source at your Enterprise
 tags: [Open Source]
-category: [Featured]
+category: Featured
 origianl_link: http://www.fourhundredwords.com/post/129821951348/why-you-must-use-open-source-at-your-enterprise
 image: /assets/images/posts/Sir_Tim_Berners-Lee.jpg
 image_attribution: Photo by <a title="Paul Clarke [CC BY-SA 4.0 (http://creativecommons.org/licenses/by-sa/4.0)], via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File%3ASir_Tim_Berners-Lee.jpg">Paul Clarke</a>

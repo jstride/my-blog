@@ -1,7 +1,7 @@
 ---
 title: DynamoDB Outage, The Library of Alexandria and BCP
 tags: [Enterprise Architecture]
-category: [Featured]
+category: Featured
 origianl_link: https://www.fourhundredwords.com/post/129532247596/dynamodb-outage-the-library-of-alexandria-and-bcp
 image: /assets/images/posts/Ancientlibraryalex.jpg
 image_attribution: Photo by <a title="O. Von Corven / Public domain" href="https://commons.wikimedia.org/wiki/File:Ancientlibraryalex.jpg"><img width="512" alt="Ancientlibraryalex" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Ancientlibraryalex.jpg/512px-Ancientlibraryalex.jpg"></a>O. Von Corven</a>

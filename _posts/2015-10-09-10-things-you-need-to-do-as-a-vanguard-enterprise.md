@@ -1,7 +1,7 @@
 ---
 title: 10 things you need to do as a Vanguard Enterprise Architect
 tags: [Enterprise Architecture]
-category: [Featured]
+category: Featured
 origianl_link: http://www.fourhundredwords.com/post/130788913196/10-things-you-need-to-do-as-a-vanguard-enterprise
 image: /assets/images/posts/Battle_of_crecy_froissart.jpg
 image_attribution: Photo by <a title="Jean Froissart / Public domain" href="https://commons.wikimedia.org/wiki/File:Battle_of_crecy_froissart.jpg">Jean Froissart</a>

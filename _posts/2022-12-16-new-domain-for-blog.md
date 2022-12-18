@@ -1,7 +1,7 @@
 ---
 title: New domain name for my blog
 tags: []
-category: [Featured]
+category: Featured
 image: /assets/images/posts/nick-fewings-BAZejJdZ57w-unsplash.jpg
 image_attribution_name: Nick Fewings
 image_attribution_unsplash: jannerboy62

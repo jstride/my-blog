@@ -1,7 +1,7 @@
 ---
 title: 10 reasons an Enterprise Architect is like being a new parent
 tags: [Enteprise Architecture]
-category: [Featured]
+category: Featured
 origianl_link: https://www.fourhundredwords.com/post/131453544570/10-reasons-an-enterprise-architect-is-like-being-a
 image: /assets/images/posts/luma-pimentel-1vnB2l7j3bY-unsplash.jpg
 image_attribution_name: Luma Pimentel

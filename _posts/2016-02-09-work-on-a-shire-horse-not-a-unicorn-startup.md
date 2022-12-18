@@ -1,7 +1,7 @@
 ---
 title: Work on a shire horse not a unicorn startup
 tags: [Management, Start Up]
-category: [Featured]
+category: Featured
 medium_link: https://stuff.archieb.com/work-on-a-shire-horse-not-a-unicorn-startup-b7c5afe4e897
 image: /assets/images/posts/2461955637_f9dbdb2d9d_k.jpg
 image_attribution: Photo by <a href="https://flickr.com/photos/95285833@N00/2461955637">Julian Tysoe</a>

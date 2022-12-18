@@ -1,7 +1,7 @@
 ---
 title: 5 Ways Digital Twins Can Action Real Change
 tags: [Digital Twin]
-category: [Featured]
+category: Featured
 medium_link: https://medium.com/@jstride/5-ways-digital-twins-can-action-real-change-4115f5000f76
 image: /assets/images/posts/markus-spiske-iar-afB0QQw-unsplash.jpg
 image_attribution_name: Markus Spiske

@@ -1,7 +1,7 @@
 ---
 title: 5 Ways to Stay Strategic on Your Way to the C-Suite
 tags: [Management]
-category: [Featured]
+category: Featured
 medium_link: https://medium.com/management-matters/to-be-a-tech-leader-kill-the-tech-talk-bd85b6723d52
 image: /assets/images/posts/dan-schiumarini-dcL8ESbsGis-unsplash.jpg
 image_attribution_name: Dan Schiumarini
