@@ -6,6 +6,9 @@ url: https://jakestride.com
 permalink: /posts/:year/:month/:day/:title:output_ext
 excerpt_separator: <!-- readmore -->
 host: 0.0.0.0
+author:
+  twitter: jake
+  picture: /assets/images/favicon.png
 collections:
   links:
     output: false
@@ -13,6 +16,11 @@ sass:
     sass_dir: _sass
 plugins:
   - jekyll-feed
+feed:
+  disable_in_development: true
+  categories:
+    - links
+    - Featured
 defaults:
   -
     scope:
