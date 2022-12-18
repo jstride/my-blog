@@ -4,7 +4,7 @@ date: '2022-12-04T07:12:55+0800'
 tags: [brand,data]
 category: [links]
 external_link: https://www.imagerelay.com/oldest-logos-that-still-exist-today/
-image: https://771811.smushcdn.com/2834171/wp-content/uploads/2020/11/oldest-logos-still-exist-6_thumb.png?lossy=1&strip=1&webp=1
+image: /assets/images/posts/oldest-logos-still-exist-6_thumb.png
 image_attribution: imagerelay
 ---
 
