@@ -1,0 +1,38 @@
+						<div id="blog" class="single-post">
+                            <!-- Post single item-->
+                            <div class="post-item">
+                                <div class="post-item-wrap">
+								{% if page.image %}
+                                    <div class="post-image">
+                                        {% if page.categories contains "links" %}
+                                        <a href="{{ page.external_link }}">
+                                            <img alt="{{ page.title }}" {% include responsive-image.html %}>
+                                        </a>
+                                        {% else %}
+                                        <img alt="{{ page.title }}" {% include responsive-image.html %}>
+                                        {% endif %}
+										<span class="post-meta-attribution">
+									{% if page.image_attribution_unsplash %}
+										Photo by <a href="https://unsplash.com/@{{ page.image_attribution_unsplash }}?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge">{{ page.image_attribution_name }}</a>
+									{% else if page.image_attribution %}
+										{{ page.image_attribution }}
+									{% endif %}
+										</span>
+                                    </div>
+								{% endif %}
+                                    <div class="post-item-description">
+                                        <h2>{% if page.categories contains "links" %}<a href="{{ page.external_link }}">{{ page.title }}</a>{% else %}{{ page.title}}{% endif %}</h2>
+                                        {{ content }}
+                                    </div>
+                                    {% unless page.categories contains "links" %}
+                                        <div class="post-tags">
+                                        {% for category in page.categories %}
+                                            <a href="/{{ category | downcase }}">{{ category }}</a>
+                                        {% endfor %}
+                                        </div>
+                                    {% endunless %}
+									<!-- INCLUDE COMMENTS -->
+                                </div>
+                            </div>
+                            <!-- end: Post single item-->
+                        </div>
