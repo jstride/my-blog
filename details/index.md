@@ -6,7 +6,7 @@ noindex: true
 ---
 Chances are you've got here as I gave you one of my business card.
 
-If you want to know more about me professionally checkout LinkedIn, alternatively drop me an email.
+If you want to know more about me professionally checkout [LinkedIn](https://www.linkedin.com/in/jakestride/), alternatively drop me an email.
 
 **[Silverhorse Technologies](https://www.silverhorsetech.com)** CEO  
 We deliver amazing Corrosion, Inspection and Integrity Solutions.  
