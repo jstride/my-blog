@@ -17,4 +17,5 @@ C-Suite as a Service, FID Support, Data and AI Advisory for Mining and Energy Co
 [jake@sindorin.com](mailto:jake@sindorin.com)
 
 **[Subsea Energy Australia](https://www.subseaenergy.org.au/)** - Board Member  
-Champions for the Australian subsea industry.
+Champions for the Australian subsea industry.  
+[jake@sindorin.com](mailto:jake@sindorin.com)
