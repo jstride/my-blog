@@ -8,6 +8,11 @@ Chances are you've got here as I gave you one of my business card.
 
 If you want to know more about me professionally checkout [LinkedIn](https://www.linkedin.com/in/jakestride/), alternatively drop me an email.
 
+**Scouts**
+- Cub Leader  
+I lead the Cub pack on Monday nights at Cambridge Scout Group.  
+[jake.stride@scoutswa.com.au](mailto: jake.stride@scoutswa.com.au)
+
 **[Silverhorse Technologies](https://www.silverhorsetech.com)** - Chief Executive Officer  
 We deliver amazing Corrosion, Inspection and Integrity Solutions.  
 [jake.stride@silverhorsetech.com](mailto:jake.stride@silverhorsetech.com)
