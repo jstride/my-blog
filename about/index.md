@@ -8,7 +8,7 @@ Chances are you've got here as I gave you one of my business card.
 
 If you want to know more about me professionally checkout [LinkedIn](https://www.linkedin.com/in/jakestride/), alternatively drop me an email.
 
-**Scouts** - Cub Leader  
+**[Scouts WA](https://scoutswa.com.au)** - Cub Leader  
 I lead the Cub pack on Monday nights at Cambridge Scout Group.  
 [jake.stride@scoutswa.com.au](mailto: jake.stride@scoutswa.com.au)
 
