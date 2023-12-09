@@ -1,5 +1,5 @@
 ---
-layout: about
+layout: default
 title: My Details
 permalink: /about/
 noindex: true

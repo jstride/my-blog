@@ -1,5 +1,5 @@
 ---
-layout: links
+layout: default
 title: Jake Stride
 permalink: /links/
 ---

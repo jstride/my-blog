@@ -1,35 +1,48 @@
-		<header id="header">
-            <div class="header-inner">
-                <div class="container">
-                    <!--Logo-->
-                    <div id="logo">
-						<a href="/">
-							<img class="logo-default" src="/assets/images/square_small.png">
-							<img class="logo-dark" src="/assets/images/square_small.png">
-						</a>
-					</div>
-                    <!--End: Logo-->
-                    <!--Navigation Resposnive Trigger-->
-                    <div id="mainMenu-trigger"> <a class="lines-button x"><span class="lines"></span></a> </div>
-                    <!--end: Navigation Resposnive Trigger-->
-                    <!--Navigation-->
-                    <div id="mainMenu">
-                        <div class="container">
-                            <nav>
-                                <ul>
-                                    <li><a href="/">Home</a></li>
-									<li><a href="/posts/">Archive</a></li>
+<!-- Header -->
+<header id="header" class="sticky-top-slide"> 
+  <!-- Navbar -->
+  <nav class="primary-menu navbar navbar-expand-lg text-uppercase navbar-line-under-text fw-600">
+    <div class="container position-relative">
+      <div class="col-auto col-lg-2 d-inline-flex ps-0"> 
+        <!-- Logo --> 
+        <a class="fw-900" href="/" title="Jake Stride"> Jake Stride </a> 
+        <!-- Logo End --> 
+      </div>
+      <div class="col col-lg-8 navbar-accordion px-0">
+        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#header-nav"><span></span><span></span><span></span></button>
+        <div id="header-nav" class="collapse navbar-collapse justify-content-center">
+          <ul class="navbar-nav">
+            {% if page.url == "/" %}
+            <li class="nav-item"><a class="nav-link active" href="/">Home</a></li>
+            {% else %}
+            <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+            {% endif %}
+            {% if page.url contains "posts" %}
+			      <li class="nav-item"><a class="nav-link active" href="/posts/">Articles</a></li>
+            {% else %}
+            <li class="nav-item"><a class="nav-link" href="/posts/">Articles</a></li>
+            {% endif %}
 							{% for category in site.categories %}
 								{% if category[0] != "Featured" and category[1].size > 4 %}
-									<li><a href="/{{ category[0] | slugize }}/">{{ category[0] }}</a></li>
+                  {% if page.dir contains category[0] %}
+									<li class="nav-item"><a class="nav-link active" href="/{{ category[0] | slugize }}/">{{ category[0] }}</a></li>
+                  {% else %}
+                  <li class="nav-item"><a class="nav-link" href="/{{ category[0] | slugize }}/">{{ category[0] }}</a></li>
+                  {% endif %}
 								{% endif %}
 							{% endfor %}
-                                    
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-                    <!--end: Navigation-->
-                </div>
-            </div>
-        </header>
+          </ul>
+        </div>
+      </div>
+      <div class="col-auto col-lg-2 d-flex justify-content-end ps-0">
+        <ul class="social-icons">
+          <li class="social-icons-twitter"><a data-bs-toggle="tooltip" href="https://twitter.com/jake/" target="_blank" title="" data-bs-original-title="Twitter"><i class="fab fa-twitter"></i></a></li>
+              <li class="social-icons-linkedin"><a data-bs-toggle="tooltip" href="https://www.linkedin.com/in/jakestride/" target="_blank" title="" data-bs-original-title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar End --> 
+</header>
+
+  <!-- Header End --> 

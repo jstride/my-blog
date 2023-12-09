@@ -1,41 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 {% include head.html %}
-<body>
-    <!-- Body Inner -->
-    <div class="body-inner">
 
-        <!-- Header -->
-        {% include header.html %}
-        <!-- end: Header -->
-        <!-- AUTHOR NAME -->
-        <section>
-            <div class="blog-author-title"> Jake's Blog </div>
-        </section>
-        <!-- end: AUTHOR NAME -->
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="70">
 
-        <!-- Content -->
-        <section id="page-content">
-            <div class="container">
-                <!-- post content -->
+<!-- Preloader -->
+<div class="preloader">
+  <div class="lds-ellipsis">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</div>
+<!-- Preloader End --> 
 
-                <!-- Blog -->
-				{% include frontpage-posts.html %}
-                <!-- end: Blog -->
+<!-- Document Wrapper   
+=============================== -->
+<div id="main-wrapper"> 
+  
+    {% include header.html %} 
+  
+  <!-- Content
+  ============================================= -->
+  <div id="content" role="main"> 
+    
+    {% if page.dir contains "about" %} 
+      {% include about.html %}
+    {% elsif page.dir == "/posts/" or page.url contains "links" %} 
+      {% include archive-posts.html %}
+    {% elsif page.url contains "posts"  %} 
+      {% include post.html %}
+    {% else %}
+      {% include frontpage-posts.html %}
+    {% endif %}
+    
+  </div>
+  <!-- Content end --> 
+  
+  {% include footer.html %}
+  
+</div>
+<!-- Document Wrapper end --> 
 
-            </div>
-            <!-- end: post content -->
-
-        </section> <!-- end: Content -->
-        <!-- Footer -->
-        {% include footer.html %}
-        <!-- end: Footer -->
-
-    </div>
-    <!-- end: Body Inner -->
-
-    {% include foot.html %}
+{% include foot.html %}
 
 </body>
-
 </html>

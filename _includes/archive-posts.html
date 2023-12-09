@@ -1,7 +1,29 @@
-				<div id="blog" class="grid-layout post-3-columns m-b-30" data-item="post-item">
-				{% for post in site.posts %}
+  <section id="portfolio" class="section bg-light">
+	<div class="container"> 
+	  <!-- Heading -->
+	  {% if page.dir contains "posts" %} 
+		<p class=" text-center mb-2 wow fadeInUp"><span class="bg-primary text-dark px-2">Archive</span></p>
+		<h2 class="text-10 fw-600 text-center mb-5 wow fadeInUp">All my blog posts and articles</h2>
+	  {% else %}
+	  <p class=" text-center mb-2 wow fadeInUp"><span class="bg-primary text-dark px-2">Links</span></p>
+	  <h2 class="text-10 fw-600 text-center mb-5 wow fadeInUp">An archive of links I've found interesting</h2>
+	  {% endif %}
+	  <!-- Heading end--> 
+	  
+	  <div class="portfolio wow fadeInUp">
+		<div class="row g-4 mt-3 portfolio-filter">
+			{% for post in site.posts %}
+				{% if page.dir contains "posts" %} 
 					{% unless post.categories contains "links" %}
-                    	{% include post-layout.html %}
+						{% include post-layout.html %}
 					{% endunless %}
-				{% endfor %}
-                </div>
+				{% else %}
+					{% if post.categories contains "links" %}
+						{% include post-layout.html %}
+					{% endif %}
+				{% endif %}
+			{% endfor %}
+		</div>
+	  </div>
+	</div>
+  </section>

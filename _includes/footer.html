@@ -1,21 +1,15 @@
-		<footer id="footer">
-            <div class="copyright-content">
-                <div class="container">
-                    <div class="copyright-text text-center">&copy; 2015 - {{ site.time | date: '%Y' }} <a href="https://jakestride.com" target="_blank" rel="noopener">Jake Stride</a>. All Rights Reserved.</div>
+        <!-- Footer
+        ============================================= -->
+        <footer id="footer" class="section bg-dark text-white">
+            <div class="container">
+            <div class="row">
+                <div class="col-lg-6 text-center text-lg-start wow fadeInUp">
+                <p class="mb-2 mb-lg-0">Copyright © {{ site.time | date: '%Y' }} <a class="fw-600" href="#">Jake Stride</a>. All Rights Reserved.</p>
+                </div>
+                <div class="col-lg-6 wow fadeInUp">
+                <p class="mb-0 text-center text-lg-end">Get in touch: <a class="fw-600" href="mailto:chat@jakestride.com">chat@jakestride.com</a></p>
                 </div>
             </div>
-        </footer>
-
-        <!--Modal Cookie-->
-        <div id="cookieNotify" class="modal-strip modal-bottom cookie-notify background-dark" data-delay="3000" data-expire="1"  data-cookie-name="jakestridemeuk" data-cookie-enabled="{% if jekyll.environment == "production" %}true{% else %}false{% endif %}">
-            <div class="container">
-                <div class="row">
-                        <div class="col-lg-8 text-sm-center sm-center sm-m-b-10 m-t-5">This website uses cookies so we can get an idea of who is reading stuff. <a href="{% post_url 2020-05-08-site-cookies %}" class="text-light"><span> More info <i class="fa fa-info-circle"></i></span></a></div>
-                            <div class="col-lg-4 text-right sm-text-center sm-center">
-                                <button type="button" class="btn btn-rounded btn-light btn-outline btn-sm m-r-10 modal-close">Decline</button>
-                                <button type="button" class="btn btn-rounded btn-light btn-sm modal-confirm">Got it!</button>
-                        </div>
-                    </div>
             </div>
-        </div>
-        <!--End: Modal Cookie-->
+        </footer>
+        <!-- Footer end -->

@@ -1,28 +1,32 @@
                     <!-- Post item-->
-					<div class="post-item border">
-                        <div class="post-item-wrap">
-                            <div class="post-image">
-                                <a href="{% if post.categories contains "links" %}{{ post.external_link }}{% else %}{{ post.url }}{% endif %}">
-                                    <img class="rounded" alt="" src="{% if jekyll.environment == "production" %}{{ post.image | replace: "/posts/", "/posts/tiny/" }}{% else %}{{ post.image }}{% endif %}">
-                                </a>
-                                <span class="post-meta-attribution">
-								{% if post.image_attribution_unsplash %}
-									Photo by <a href="https://unsplash.com/@{{ post.image_attribution_unsplash }}?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge">{{ post.image_attribution_name }}</a>
+                    <div class="col-sm-6 col-lg-4 detailed">
+                        <div class="portfolio-box">
+                          <div class="portfolio-img"> <img class="img-fluid d-block" src="{% if jekyll.environment == "production" %}{{ post.image | replace: "/posts/", "/posts/tiny/" }}{% else %}{{ post.image }}{% endif %}" alt="">
+                            <div class="portfolio-overlay"> <a class="stretched-link" href="{% if post.categories contains "links" %}{{ post.external_link }}{% else %}{{ post.url }}{% endif %}"></a>
+                              <div class="portfolio-overlay-details">
+                                <p class="text-primary text-8"><i class="fas fa-file-alt"></i></p>
+                                <h5 class="text-white text-5">{{ post.title }}</h5>
+                                <p class="text-light">{{ post.date | date: "%-d %B %Y" }}</p>
+                                <span class="text-light">{% if post.image_attribution_unsplash %}
+                                    Photo by <a href="https://unsplash.com/@{{ post.image_attribution_unsplash }}?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge">{{ post.image_attribution_name }}</a>
                                 {% else if post.image_attribution_url %}
-									Photo by <a href="{{ post.image_attribution_url }}">{{ post.image_attribution }}</a>
-								{% else if post.image_attribution %}
-									{{ post.image_attribution }}
-								{% endif %}
-								</span>
+                                    Photo by <a href="{{ post.image_attribution_url }}">{{ post.image_attribution }}</a>
+                                {% else if post.image_attribution %}
+                                    {{ post.image_attribution }}
+                                {% endif %}</span>
+                              </div>
                             </div>
-                            <div class="post-item-description">
-                                <span class="post-meta-date"><i class="fa fa-calendar-o"></i>{{ post.date | date: "%-d %B %Y" }}</span>
-                                <!--<span class="post-meta-comments"><a href=""><i class="fa fa-comments-o"></i>33 Comments</a></span>-->
-                                <h2><a href="{% if post.categories contains "links" %}{{ post.external_link }}{% else %}{{ post.url }}{% endif %}">{{ post.title }}</a></h2>
+                          </div>
+                          
+                        </div>
+          
+                        <div class="border">
+                            <div class="m-3">
+                                <h5><a href="{% if post.categories contains "links" %}{{ post.external_link }}{% else %}{{ post.url }}{% endif %}">{{ post.title }}</a></h5>
                                 {{ post.excerpt }}
                                 {% assign tags_size = post.tags | size %}
                                 {% if tags_size > 0 %}<span class="post-meta-category"><i class="fa fa-tag"></i>{% for tag in post.tags %}{{ tag }}{% if forloop.last != true %}, {% endif %}{% endfor %}</span>{% endif %}
                             </div>
                         </div>
-                    </div>
+                      </div>
 					<!-- end: Post item-->

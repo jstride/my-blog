@@ -1,5 +1,5 @@
 ---
-layout: postlist
+layout: default
 title: Jake Stride
 permalink: /posts/
 ---
