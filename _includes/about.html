@@ -1,38 +1,63 @@
-						<div id="blog" class="single-post">
-                            <!-- Post single item-->
-                            <div class="post-item">
-                                <div class="post-item-wrap">
-								{% if page.image %}
-                                    <div class="post-image">
-                                        {% if page.categories contains "links" %}
-                                        <a href="{{ page.external_link }}">
-                                            <img alt="{{ page.title }}" {% include responsive-image.html %}>
-                                        </a>
-                                        {% else %}
-                                        <img alt="{{ page.title }}" {% include responsive-image.html %}>
-                                        {% endif %}
-										<span class="post-meta-attribution">
-									{% if page.image_attribution_unsplash %}
-										Photo by <a href="https://unsplash.com/@{{ page.image_attribution_unsplash }}?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge">{{ page.image_attribution_name }}</a>
-									{% else if page.image_attribution %}
-										{{ page.image_attribution }}
-									{% endif %}
-										</span>
-                                    </div>
-								{% endif %}
-                                    <div class="post-item-description">
-                                        <h2>{% if page.categories contains "links" %}<a href="{{ page.external_link }}">{{ page.title }}</a>{% else %}{{ page.title}}{% endif %}</h2>
-                                        {{ content }}
-                                    </div>
-                                    {% unless page.categories contains "links" %}
-                                        <div class="post-tags">
-                                        {% for category in page.categories %}
-                                            <a href="/{{ category | downcase }}">{{ category }}</a>
-                                        {% endfor %}
-                                        </div>
-                                    {% endunless %}
-									<!-- INCLUDE COMMENTS -->
-                                </div>
-                            </div>
-                            <!-- end: Post single item-->
-                        </div>
+<section id="about" class="section">
+    <div class="container"> 
+      <!-- Heading -->
+      <h2 class="text-10 fw-600 text-center mb-5 wow fadeInUp">{{ page.title }}</h2>
+      <!-- Heading end-->
+      
+      <div class="row">
+        <div class="col-lg-8 text-center text-lg-start wow fadeInUp">
+          <h2 class="text-8 fw-400 mb-3">Hi, I'm <span class="fw-700 border-bottom border-3 border-primary">Jake Stride</span></h2>
+          <p class="text-5">Chances are you've got here as I gave you one of my business card.</p>
+          <p class="text-5">If you want to know more about me professionally checkout <a class="link-dark" href="https://www.linkedin.com/in/jakestride/">LinkedIn</a>, alternatively drop me an email.</p>
+        </div>
+        <div class="col-lg-4 mt-4 mt-lg-0 wow fadeInUp" data-wow-delay="0.2s">
+          <div class="featured-box style-4">
+            <div class="featured-box-icon text-25 fw-500 bg-primary rounded-circle"><span class="wow heartBeat" data-wow-delay="1.3s">{{ site.time | date: '%y' }}</span></div>
+            <h3 class="text-7 wow rubberBand" data-wow-delay="2s">Years of <span class="fw-700">Experiance</span></h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="resume" class="section bg-light">
+    <div class="container"> 
+      <!-- Heading -->
+      <h2 class="text-10 fw-600 text-center mb-5 wow fadeInUp">Contact Details</h2>
+      <!-- Heading end-->
+      
+      <div class="row g-5 mt-5"> 
+        <!-- My Education -->
+        <div class="col-lg-6 wow fadeInUp">
+          <h2 class="text-7 fw-600 mb-4 pb-2">Day Jobs</h2>
+          <div class="border-start border-2 border-primary ps-3">
+            <h3 class="text-5"><a class="link-dark" href="https://www.silverhorsetech.com">Silverhorse Technologies</a></h3>
+            <p class="mb-0">Chief Executive Officer</p>
+            <p class="mb-2"><a class="link-primary" href="mailto:jake.stride@silverhorsetech.com">jake.stride@silverhorsetech.com</a></p>
+            <p class="text-muted">We deliver amazing Corrosion, Inspection and Integrity Solutions.</p>
+            <hr class="my-4">
+            <h3 class="text-5 "><a class="link-dark" href="https://sindorin.com">Sindorin</a></h3>
+            <p class="mb-0">Founder and Principal Advisor</p>
+            <p class="mb-2"><a class="link-primary" href="mailto:jake@sindorin.com">jake@sindorin.com</a></p>
+            <p class="text-muted">C-Suite as a Service, FID Support, Data and AI Advisory for Mining and Energy Companies.</p>
+          </div>
+        </div>
+        <!-- My Experience -->
+        <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.2s">
+          <h2 class="text-7 fw-600 mb-4 pb-2">Volunteer Roles</h2>
+          <div class="border-start border-2 border-primary ps-3">
+            <h3 class="text-5"><a class="link-dark" href="https://scoutswa.com.au">Scouts WA</a></h3>
+            <p class="mb-0">Cub Leader</p>
+            <p class="mb-2"><a class="link-primary" href="mailto: jake.stride@scoutswa.com.au">jake.stride@scoutswa.com.au</a></p>
+            <p class="text-muted">I lead the Cub pack on Monday nights at Cambridge Scout Group.</p>
+            <hr class="my-4">
+            <h3 class="text-5"><a class="link-dark" href="https://www.subseaenergy.org.au/">Subsea Energy Australia</a></h3>
+            <p class="mb-0">Board Member</p>
+            <p class="mb-2"><a class="link-primary" href="jake@subseaenergy.org.au">jake@subseaenergy.org.au</a></p>
+            <p class="text-muted">Champions for the Australian subsea industry.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
